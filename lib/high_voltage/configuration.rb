@@ -1,6 +1,9 @@
 module HighVoltage
   module Configuration
-    CACHING_DEPRECATION_WARNING = 'Caching support has been deprecated and will be removed in the next release.'
+    CACHING_DEPRECATION_WARNING = <<-WARNING.strip_heredoc.squish
+    Caching support has been deprecated and will be removed
+    in the next release.
+    WARNING
 
     attr_accessor(
       :content_path,

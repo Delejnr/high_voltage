@@ -26,7 +26,7 @@ describe HighVoltage::Configuration do
     it { expect(HighVoltage.route_drawer).to eq config_value }
     it { expect(HighVoltage.routes).to eq config_value }
   end
- 
+
   describe '#action_caching=' do
     it 'displays a deprecation warning' do
       allow(ActiveSupport::Deprecation).to receive(:warn)
@@ -52,7 +52,6 @@ describe HighVoltage::Configuration do
         .with(HighVoltage::Configuration::CACHING_DEPRECATION_WARNING)
     end
   end
-
 
   describe '#page_caching=' do
     it 'displays a deprecation warning' do
